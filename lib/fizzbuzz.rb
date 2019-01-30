@@ -5,7 +5,7 @@ def fizzbuzz(input)
     return input
   elsif input % 3 == 0
     return 'fizz'
-  elsif input == 5
+  elsif input % 5 == 0
     return 'buzz'
   elsif !input.is_a? Integer
     return "this is not an integer"
