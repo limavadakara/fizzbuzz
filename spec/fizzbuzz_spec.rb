@@ -38,5 +38,11 @@ describe 'fizzbuzz' do
     
     it 'returns input when passed 13' do
        expect(fizzbuzz(13)).to eq 13
-   end
+    end
+    
+    it 'returns "fizzbuzz" when passed a multiple of 3 and 5' do
+       expect(fizzbuzz(45)).to eq "fizzbuzz"
+       expect(fizzbuzz(60)).to eq "fizzbuzz"
+    end
+
 end
