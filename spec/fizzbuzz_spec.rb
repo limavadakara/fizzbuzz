@@ -35,4 +35,8 @@ describe 'fizzbuzz' do
     it 'returns "this is not an integer" when passed a string' do
         expect(fizzbuzz("buzz")).to eq "this is not an integer"
     end
+    
+    it 'returns input when passed 13' do
+       expect(fizzbuzz(13)).to eq 13
+   end
 end
