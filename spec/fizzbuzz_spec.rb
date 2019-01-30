@@ -19,4 +19,8 @@ describe 'fizzbuzz' do
     it 'returns "this is not an integer" when passed 3.3' do
         expect(fizzbuzz(3.3)).to eq 'this is not an integer'
     end
+    
+    it 'returns "fizz" when passed 9' do
+        expect(fizzbuzz(9)).to eq "fizz"
+    end
 end
