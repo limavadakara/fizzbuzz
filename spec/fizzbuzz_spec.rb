@@ -44,5 +44,10 @@ describe 'fizzbuzz' do
        expect(fizzbuzz(45)).to eq "fizzbuzz"
        expect(fizzbuzz(60)).to eq "fizzbuzz"
     end
+    
+    it 'returns "this is not an integer" when passed a boolean' do
+       expect(fizzbuzz(TRUE)).to eq "this is not an integer"
+       expect(fizzbuzz(FALSE)).to eq "this is not an integer"
+    end
 
 end
